@@ -7,37 +7,37 @@
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
-            y: '2006',
+            y: '2016',
             a: 100,
             b: 90
         }, {
-            y: '2007',
+            y: '2017',
             a: 75,
             b: 65
         }, {
-            y: '2008',
+            y: '2018',
             a: 50,
             b: 40
         }, {
-            y: '2009',
+            y: '2019',
             a: 75,
             b: 65
         }, {
-            y: '2010',
+            y: '2020',
             a: 50,
             b: 40
         }, {
-            y: '2011',
+            y: '2021',
             a: 75,
             b: 65
         }, {
-            y: '2012',
+            y: '2022',
             a: 100,
             b: 90
         }],
         xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['A', 'B'],
+        ykeys: ['a', 'b', 'c'],
+        labels: ['Bahan', 'Tugas'],
         barColors: ['#343957', '#5873FE'],
         hideHover: 'auto',
         gridLineColor: '#eef0f2',
