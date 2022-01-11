@@ -1,0 +1,230 @@
+<?php 
+include 'top.php';
+include 'samping.php';
+
+ ?>
+<div class="content-body">
+<div class="container-fluid">
+    <div class="row page-titles mx-0">
+                    <div class="col-sm-2 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi,Admin</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-10 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Pengguna</a></li>
+                            <li class="breadcrumb-item active"><a href="ParentTable.php">Orang Tua</a></li>
+                            <li class="breadcrumb-item active"><a href="EditParent.php">Edit Data Orang Tua</a></li>
+                        </ol>
+                    </div>
+                </div>
+<div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Edit Data Orang Tua</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-validation">
+                                    <form class="form-valide" action="#" method="post">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <img src="../images/avatar/avatar-operator.png" style="width: 60%;">
+                                               <div class="col-lg-12 mt-2">
+                                                        <a href="EditTeacher.php"><button type="submit" class="btn btn-outline-primary" style="width:55%;">Pilih Profil</button></a>
+                                                </div>
+                                                <div class="col-lg-12 mt-2">
+                                                        <button type="button" class="btn btn-outline-primary" style="width:55%;" data-toggle="modal" data-target="#basicModal">Ganti Password</button>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="basicModal">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">  Ubah Password</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <form class="form-valide" action="#" method="post">
+                                              
+                                            <div class="col-xl-12">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-6 col-form-label" for="val-website">Password Lama 
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="Password" class="form-control" id="val-website" name="val-website" placeholder="***">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-6 col-form-label" for="val-skill">Password Baru
+                                                        <!-- <span class="Password-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="Password" class="form-control" id="val-website" name="val-website" placeholder="***">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-website">Website
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="http://example.com">
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group row">
+                                                    <label class="col-lg-6 col-form-label" for="val-skill">Konfirmasi Password Baru
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="Password" class="form-control" id="val-website" name="val-website" placeholder="*****">
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        
+                                        </form>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                            <div class="col-xl-8">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-website">No Ktp
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="12121">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Nama Lengkap
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Ayunda">
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-website">Website
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="http://example.com">
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Password
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="Password" class="form-control" id="val-website" name="val-website" placeholder="*****">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">T.Tanggal Lahir
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="date" class="form-control" id="val-website" name="val-website" placeholder="12121">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Jenis Kelamin
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <select class="form-control" id="val-skill" name="val-skill">
+                                                            <option value="">Pilih Jenis Kelamin</option>
+                                                            <option value="html">Laki-Laki</option>
+                                                            <option value="css">Perempuan</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Alamat
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Jl. Sana..">
+                                                    </div>
+                                                </div>
+                                               <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Agama
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <select class="form-control" id="val-skill" name="val-skill">
+                                                            <option value="">Pilih Agama</option>
+                                                            <option value="islam">Islam</option>
+                                                            <option value="kristen">Kriste</option>
+                                                            <option value="Hindu">Hindu</option>
+                                                            <option value="Budha">Budha</option>
+                                                            <option value="Katolik">Katolik</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Nama Anak 1
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <label type="text" class="form-control" id="val-website" name="val-website" placeholder="Erna">Erna</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Nama Anak 2
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="Erni">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">No Hp
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <input type="text" class="form-control" id="val-website" name="val-website" placeholder="0987">
+                                                    </div>
+                                                </div>
+                                                 <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label" for="val-skill">Status
+                                                        <!-- <span class="text-danger">*</span> -->
+                                                    </label>
+                                                     <div class="col-lg-6">
+                                                        <select class="form-control" id="val-skill" name="val-skill">
+                                                            <option value="">Pilih Status</option>
+                                                            <option value="active">Aktif</option>
+                                                            <option value="inactive">Tidak Aktif</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                    <div class="col-lg-8 ml-auto">
+                                                
+                                               
+                                                <div class="form-group row">
+                                                    <div class="col-lg-8 ml-auto">
+                                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+<?php 
+include 'footer.php';
+
+ ?>

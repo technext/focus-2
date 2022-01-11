@@ -96,7 +96,7 @@
                 }
             }
             &>a {
-                color: rgba($color: $body-color, $alpha: 1);
+                color: white;
             }
             &:hover,
             &:focus,
@@ -162,7 +162,7 @@
             display: block;
             padding: 0.8125rem 1.25rem;
             outline-width: 0;
-            color: rgba($color: $body-color, $alpha: 1);
+            color: white;
             text-decoration: none;
         }
         .has-arrow {
