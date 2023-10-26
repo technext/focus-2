@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+    <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="./images/logo.png" alt="">
+                <img class="logo-compact" src="./images/logo-text.png" alt="">
+                <img class="brand-title" src="./images/logo-text.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                          
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell"></i>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>BAZAAR</strong> will happen few days <strong>remeber to get ready</strong> to buy merchs
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">October 29, 2023 -- 8:00AM - 5:00 PM</span>
+                                        </li>
+                                       
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i
+                                            class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="./app-profile.html" class="dropdown-item">
+                                        <i class="icon-user"></i>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                        <i class="icon-envelope-open"></i>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="./page-login.html" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-single-04"></i><span class="nav-text">Home</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="./index.html">Dashboard </a></li>
+                  
+                        </ul>
+                    </li>
+                    <li class="nav-label">Event Manager</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-app-store"></i><span class="nav-text">Systems</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-datatable-basic.html">List View</a></li>
+                            <li><a href="./app-calender.html">Calendar View</a></li>
+                        </ul>
+                    </li>
+                  
+                </ul>
+            </div>
+
+
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="stat-widget-two card-body">
+                                <div class="stat-content">
+                                    <div class="stat-text">TBD</div>
+                                    <div class="stat-digit"> <i class="fa fa-book"></i>TBD</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="stat-widget-two card-body">
+                                <div class="stat-content">
+                                    <div class="stat-text">TBD</div>
+                                    <div class="stat-digit"> <i class="fa fa-book"></i>TBD</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary w-75" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="stat-widget-two card-body">
+                                <div class="stat-content">
+                                    <div class="stat-text">TBD</div>
+                                    <div class="stat-digit"> <i class="fa fa-book"></i> TBD</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="stat-widget-two card-body">
+                                <div class="stat-content">
+                                    <div class="stat-text">TBD</div>
+                                    <div class="stat-digit"> <i class="fa fa-book"></i>TBD</div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger w-65" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# card -->
+                    </div>
+                    <!-- /# column -->
+                </div>
+      
+                <div class="row">
+                  
+                    <div class="col-xl-4 col-xxl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">This week's Events (October 1-7, 2023)</h4>
+                            </div>
+                            <div class="card-body px-0">
+                                <div class="todo-list">
+                                    <div class="tdl-holder">
+                                        <div class="tdl-content widget-todo mr-4">
+                                            <ul id="todo_list">
+                                                <li><label><input type="checkbox"><i></i><span>BAZAAR</span><a href='#'
+                                                            class="ti-trash"></a></label></li>
+                                                <li><label><input type="checkbox" checked><i></i><span>TechIS Hackaton</span><a
+                                                            href='#' class="ti-trash"></a></label></li>
+                                                <li><label><input type="checkbox"><i></i><span>CICS Day
+                                                            </span><a href='#' class="ti-trash"></a></label></li>
+                                                <li><label><input type="checkbox" checked><i></i><span>Teachers' Day
+                                                            </span><a href='#' class="ti-trash"></a></label></li>
+                                                <li><label><input type="checkbox" checked><i></i><span>SportsFest 2023</span><a
+                                                            href='#' class="ti-trash"></a></label></li>
+                                                <li><label><input type="checkbox"><i></i><span>CICS Knowledge Forum
+                                                            .</span><a href='#' class="ti-trash"></a></label></li>
+                                            </ul>
+                                        </div>
+                                        <div class="px-4">
+                                            <input type="text" class="tdl-new form-control" placeholder="Write new item and hit 'Enter'...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-xl-12 col-xxl-6 col-lg-6 col-md-12">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                                <div class="card">
+                                    <div class="social-graph-wrapper widget-facebook">
+                                        <span class="s-icon"><i class="fa fa-facebook"></i></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">89</span> k</h4>
+                                                <p class="m-0">Friends</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">119</span> k</h4>
+                                                <p class="m-0">Followers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                                <div class="card">
+                                    <div class="social-graph-wrapper widget-linkedin">
+                                        <span class="s-icon"><i class="fa fa-linkedin"></i></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">89</span> k</h4>
+                                                <p class="m-0">Friends</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">119</span> k</h4>
+                                                <p class="m-0">Followers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                                <div class="card">
+                                    <div class="social-graph-wrapper widget-googleplus">
+                                        <span class="s-icon"><i class="fa fa-google-plus"></i></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">89</span> k</h4>
+                                                <p class="m-0">Friends</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">119</span> k</h4>
+                                                <p class="m-0">Followers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                                <div class="card">
+                                    <div class="social-graph-wrapper widget-twitter">
+                                        <span class="s-icon"><i class="fa fa-twitter"></i></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 border-right">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">89</span> k</h4>
+                                                <p class="m-0">Friends</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                                <h4 class="m-1"><span class="counter">119</span> k</h4>
+                                                <p class="m-0">Followers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Quixkit</a> 2019</p>
+                <p>Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a></p> 
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+
+
+    <!-- Vectormap -->
+    <script src="./vendor/raphael/raphael.min.js"></script>
+    <script src="./vendor/morris/morris.min.js"></script>
+
+
+    <script src="./vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="./vendor/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="./vendor/gaugeJS/dist/gauge.min.js"></script>
+
+    <!--  flot-chart js -->
+    <script src="./vendor/flot/jquery.flot.js"></script>
+    <script src="./vendor/flot/jquery.flot.resize.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- Counter Up -->
+    <script src="./vendor/jqvmap/js/jquery.vmap.min.js"></script>
+    <script src="./vendor/jqvmap/js/jquery.vmap.usa.js"></script>
+    <script src="./vendor/jquery.counterup/jquery.counterup.min.js"></script>
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
