@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 23, 2023 at 12:46 AM
+-- Generation Time: Oct 25, 2023 at 02:46 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -45,9 +45,16 @@ CREATE TABLE IF NOT EXISTS `course` (
 DROP TABLE IF EXISTS `department`;
 CREATE TABLE IF NOT EXISTS `department` (
   `dept_ID` int NOT NULL AUTO_INCREMENT,
-  `department_Name` int NOT NULL,
+  `department_Name` varchar(50) NOT NULL,
   PRIMARY KEY (`dept_ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `department`
+--
+
+INSERT INTO `department` (`dept_ID`, `department_Name`) VALUES
+(1, 'CICS');
 
 -- --------------------------------------------------------
 
@@ -133,6 +140,13 @@ CREATE TABLE IF NOT EXISTS `students` (
   KEY `courseID` (`courseID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`sr_code`, `firstName`, `lastName`, `courseID`, `year`, `section`) VALUES
+('21-33470', 'Emjay', 'Rongavilla', 1, '3rd', 'NT-3102');
+
 -- --------------------------------------------------------
 
 --
@@ -193,11 +207,18 @@ DROP TABLE IF EXISTS `userstudents`;
 CREATE TABLE IF NOT EXISTS `userstudents` (
   `userID` int NOT NULL AUTO_INCREMENT,
   `sr_code` varchar(255) NOT NULL,
-  `password` binary(255) NOT NULL,
-  `salt` binary(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `salt` varchar(10) NOT NULL,
   PRIMARY KEY (`userID`),
   KEY `sr_code` (`sr_code`(250))
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `userstudents`
+--
+
+INSERT INTO `userstudents` (`userID`, `sr_code`, `password`, `salt`) VALUES
+(1, '21-33470', 'e0999eedf060a2ee05ab267bdb52f827b5f0174d839ac30eae6cd235392531f6', '1ea831d0d9');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
