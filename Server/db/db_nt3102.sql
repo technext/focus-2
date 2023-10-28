@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 25, 2023 at 02:46 PM
+-- Generation Time: Oct 28, 2023 at 04:31 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_nt3102`
 --
+CREATE DATABASE IF NOT EXISTS `db_nt3102` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE `db_nt3102`;
 
 -- --------------------------------------------------------
 
@@ -47,14 +49,16 @@ CREATE TABLE IF NOT EXISTS `department` (
   `dept_ID` int NOT NULL AUTO_INCREMENT,
   `department_Name` varchar(50) NOT NULL,
   PRIMARY KEY (`dept_ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `department`
 --
 
 INSERT INTO `department` (`dept_ID`, `department_Name`) VALUES
-(1, 'CICS');
+(1, 'CICS'),
+(2, 'CAS'),
+(3, 'CABE');
 
 -- --------------------------------------------------------
 
@@ -157,8 +161,8 @@ DROP TABLE IF EXISTS `superusers`;
 CREATE TABLE IF NOT EXISTS `superusers` (
   `superID` int NOT NULL AUTO_INCREMENT,
   `userName` varchar(255) NOT NULL,
-  `password` binary(255) NOT NULL,
-  `salt` binary(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `salt` varchar(10) NOT NULL,
   PRIMARY KEY (`superID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
