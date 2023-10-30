@@ -7,14 +7,14 @@ var loginAttempt = 0;
 const userType = document.getElementById('loginForm').getAttribute("data-usertype");
 loginBtn.addEventListener('click', LoginProcess);
 async function LoginProcess(e){
-
+    ResetButton();
     e.preventDefault();
 
     //Set Request to /login
     const loginResponse = await fetch('/login',{
         method: 'POST',
         headers: {
-            "content-type": 'application/json'
+            "Content-Type": 'application/json'
         },
         body: JSON.stringify({
             username: usernameField.value,
@@ -25,7 +25,9 @@ async function LoginProcess(e){
 
     //200 = HTTP OK
     if(loginResponse.status == 200){
-        console.log('Login Successful');
+        const responseData = await loginResponse.json(); // Parse the JSON response
+        const userID = Number(responseData[0].userID);
+        window.location.assign( '/student/dashboard/'+ userID);
     }
     //401 = HTTP Unauthorized
     if(loginResponse.status == 401){
@@ -40,7 +42,10 @@ async function LoginProcess(e){
     }
 }
 
-
+function ResetButton(){
+    usernameField.style.border = "0px";
+    passwordField.style.border = "0px";
+}
 
 const DisableLogin = (LoginButton) => {
     // Disables the button temporarily

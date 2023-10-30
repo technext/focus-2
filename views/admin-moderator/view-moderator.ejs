@@ -65,7 +65,16 @@
                 <nav class="navbar navbar-expand">
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
-                        
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
 
                         <ul class="navbar-nav header-right">
@@ -77,16 +86,53 @@
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <ul class="list-unstyled">
                                         <li class="media dropdown-item">
-                                            <span class="success"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            <span class="success"><i class="ti-user"></i></span>
                                             <div class="media-body">
                                                 <a href="#">
-                                                    <p><strong>BAZAAR</strong> will happen few days <strong>remeber to get ready</strong> to buy merchs
+                                                    <p><strong>Martin</strong> has added a <strong>customer</strong> Successfully
                                                     </p>
                                                 </a>
                                             </div>
-                                            <span class="notify-time">October 29, 2023 -- 8:00AM - 5:00 PM</span>
+                                            <span class="notify-time">3:20 am</span>
                                         </li>
-                                       
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> James.</strong> has added a<strong>customer</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
                                     </ul>
                                     <a class="all-notification" href="#">See all notifications <i
                                             class="ti-arrow-right"></i></a>
@@ -116,6 +162,13 @@
                 </nav>
             </div>
         </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
         <div class="quixnav">
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
@@ -123,19 +176,28 @@
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
                                 class="icon icon-single-04"></i><span class="nav-text">Home</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="./index.html">Dashboard </a></li>
-                  
+                            <li><a href="./index.html">Dashboard</a></li>
+                     
                         </ul>
                     </li>
-                    <li class="nav-label">Event Manager</li>
+                    <li class="nav-label">Account Management</li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
-                                class="icon icon-app-store"></i><span class="nav-text">Systems</span></a>
+                                class="icon icon-app-store"></i><span class="nav-text">Moderators</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="table-datatable-basic.html">List View</a></li>
-                            <li><a href="./app-calender.html">Calendar View</a></li>
+                            <li><a href="table-datatable-basic.html">Account List</a></li>
+                            <li><a href="form-element.html">Register Moderator</a></li>
                         </ul>
                     </li>
                   
+                    <li class="nav-label">Events Management</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i
+                                class="icon icon-form"></i><span class="nav-text">Events</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-datatable-basic1.html">Event List</a></li>
+                            <li><a href="form-element1.html">Add Events</a></li>
+                        </ul>
+                    </li>
+                 
                 </ul>
             </div>
 
@@ -146,14 +208,14 @@
                 <div class="row page-titles mx-0">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
-                            <h4>Hi, welcome back ||Student Name|| ! </h4>
-                            <span class="ml-1">Events List</span>
+                            <h4>Hi, welcome back!</h4>
+                            <span class="ml-1">Events</span>
                         </div>
                     </div>
                     <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Events</a></li>
-                            <li class="breadcrumb-item active"><a href="javascript:void(0)">List View</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">List</a></li>
                         </ol>
                     </div>
                 </div>
@@ -164,11 +226,11 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Here are the list of Events</h4>
+                                <h4 class="card-title">Manage Moderator</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table id="example" class="display" style="min-width: 845px;">
+                                    <table id="example" class="display" style="min-width: 845px">
                                         <thead>
                                             <tr>
                                                 <th style="color: white;">Event Name</th>
@@ -176,24 +238,31 @@
                                                 <th style="color: white;">Date</th>
                                                 <th style="color: white;">Time</th>
                                                 <th style="color: white;">Organization/Department</th>
+                                                <th style="color: white;">Action</th>
+                                    
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Bazaar</td>
-                                                <td><textarea style="border: none; height: 150px; width: 100%;" readonly>An event description is a text or copy that tells audiences all the essential details about your event. These details should come together so that it compels potential attendees to register. But more than driving up attendance, a good event description can pique the interest of non-members and even the press</textarea></td>
-                                                <td>October 29, 2023</td>
-                                                <td>8:00AM - 5:00 PM</td>
-                                                <td>Whole Campus</td>
-                                            </tr>
-                                            <tr>
-                                                <td>TechIS Hackaton</td>
-                                                <td><textarea style="border: none; height: 150px; width: 100%;" readonly>An event description is a text or copy that tells audiences all the essential details about your event. These details should come together so that it compels potential attendees to register. But more than driving up attendance, a good event description can pique the interest of non-members and even the press</textarea></td>
-                                                <td>October 27, 2023</td>
-                                                <td>8:00AM - 5:00 PM</td>
-                                                <td>TechIS - JPCS</td>
-                                            </tr>
+                                       
                                           
+                                            <tr>
+                                                <td>Account 1</td>
+                                               <td>Email.com</td>
+                                                <td>pass</td>
+                                                <td>CICS</td>
+                                                <td>3rd Year</td>
+                                                <td><a href="http://" style="background-color: darkgreen; color: white; padding: 10px; border-radius: 10px;">Edit</a><a href="http://" style="background-color: darkred; color: white; padding: 10px; border-radius: 10px;">Delete</a></td>
+                                           
+                                            </tr>
+                                            <tr>
+                                                <td>Account 2</td>
+                                                <td>Email.com</td>
+                                                <td>pass</td>
+                                                <td>TechIS - JPCS</td>
+                                                <td>CICS</td>
+                                                <td><a href="http://" style="background-color: darkgreen; color: white; padding: 10px; border-radius: 10px;">Edit</a><a href="http://" style="background-color: darkred; color: white; padding: 10px; border-radius: 10px;">Delete</a></td>
+                                           
+                                            </tr>
                                         </tbody>
                                         <tfoot>
                                             <tr>
@@ -202,6 +271,7 @@
                                                 <th style="color: white;">Date</th>
                                                 <th style="color: white;">Time</th>
                                                 <th style="color: white;">Organization/Department</th>
+                                                <th style="color: white;">Action</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -209,7 +279,10 @@
                             </div>
                         </div>
                     </div>
-               
+                    
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
