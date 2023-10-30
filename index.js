@@ -39,20 +39,6 @@ app.use((err, req, res, next) => {
 });
 
 
-// Development mode delete if done
-app.post("/login",(req,res)=>{
-
-    const {username,password,usertype} = req.body;
-
-    const cmd = "SELECT userID FROM userstudents WHERE sr_code= ? AND password= SHA2(CONCAT( ? , salt),256);";
-    db.query(cmd, [username,password], (err,data)=>{
-        if(err) return res.json(err);
-        if(data.length === 0) res.status(401).send('Unauthorized');
-        res.status(200).json(data);
-    });
-});
-
-// Development mode delete if done
 
 
 
