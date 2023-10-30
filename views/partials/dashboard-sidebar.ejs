@@ -1,0 +1,18 @@
+
+<ul class="metismenu" id="menu">
+    <% Menu[0].Menu.forEach(menuItem => { %>
+       <li class="<%= menuItem.Class %>"><%= menuItem.Title %></li>
+        <% if (menuItem.Subitem) { %>
+            <li>
+                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <i class="<%= menuItem.Icon %>"></i><span class="nav-text"><%= menuItem.Dropdown %></span>
+                </a>
+            <% menuItem.Subitem.forEach(subItem => { %>
+                    <ul aria-expanded="false">
+                        <li><a href="<%= subItem.Route %>"><%= subItem.Name %></a></li>
+                    </ul>
+            <% }); %>
+            </li>
+        <% } %>
+    <% }); %>
+</ul>
