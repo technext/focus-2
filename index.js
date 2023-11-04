@@ -9,13 +9,22 @@ import adminRouter from "./routes/admin.mjs";
 import modRouter from "./routes/moderator.mjs";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+import cookieParser from "cookie-parser";
+import bodyParser from "body-parser";
 
 const app = express();
+
+
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')))
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
 app.use(express.json());
 app.use(cors());
 app.set(express.static(path.join(__dirname,'views')));
 app.use(express.static(path.join(__dirname,'public')));
-
 
 
 
@@ -37,11 +46,6 @@ app.get('*', (req, res, next) => {
 app.use((err, req, res, next) => {  
     res.status(err.status || 500).send(err.message);
 });
-
-
-
-
-
 
 
 

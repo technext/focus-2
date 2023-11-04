@@ -11,7 +11,7 @@ async function LoginProcess(e){
     e.preventDefault();
 
     //Set Request to /login
-    const loginResponse = await fetch('/login',{
+    const loginResponse = await fetch('login',{
         method: 'POST',
         headers: {
             "Content-Type": 'application/json'
