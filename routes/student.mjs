@@ -1,4 +1,5 @@
 import express from "express";
+import session from 'express-session';
 const router = express.Router();
 import db from "../db/connection.mjs";
 import crypto from 'crypto';
@@ -46,7 +47,7 @@ router.post('/login', function(request,response){
     const username = request.body.username;
     const password = request.body.password;
     // Query the MySQL database for the student user record
-    const query = 'SELECT password,salt FROM userstudents WHERE sr_code = ?';
+    const query = 'SELECT userID,password,salt FROM userstudents WHERE sr_code = ?';
     db.query(query,[username], function(error,result){
          // If the user is found, return the user's record
         if (result.length > 0) {
@@ -62,7 +63,7 @@ router.post('/login', function(request,response){
                 const hashedSaltAndPass = has.digest('hex')
                 if (dbPassword == hashedSaltAndPass) {
                     console.log("Login Successful!!!");
-                    response.redirect("/student/dashboard");
+                    response.redirect("dashboard");
                 } else {
                     //Start of debugging of SHA
                     console.log("Wrong Password");
